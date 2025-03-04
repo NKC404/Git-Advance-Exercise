@@ -102,5 +102,21 @@ Date:   Tue Mar 4 12:46:41 2025 +0200
 **Challenge:** Recover from this error by staging/adding test4.md and amending the commit message with an appropriate description.
 
 ```bash
-
+iMac Git-Advance % git add test4.md
+iMac Git-Advance % git commit --amend -m "chore(test4): improve README formatting and add the test4 file"
+[main 48ddfdf] chore(test4): improve README formatting and add the test4 file
+ Date: Tue Mar 4 14:22:20 2025 +0200
+ 2 files changed, 83 insertions(+), 77 deletions(-)
+ create mode 100644 test4.md
+iMac Git-Advance % git push -f
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 805 bytes | 805.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NKC404/Git-Advance-Exercise.git
+ + b45a4b0...48ddfdf main -> main (forced update)
+iMac Git-Advance % 
 ```
